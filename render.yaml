@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: bot-vote
+    schedule: "0 */6 * * *"  # Toutes les 6h
+    runtime: python
+    buildCommand: ""
+    startCommand: "python main.py"
