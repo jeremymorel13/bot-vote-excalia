@@ -1,7 +1,7 @@
 services:
   - type: cron
     name: bot-vote
-    schedule: "0 */6 * * *"  # Toutes les 6h
+    schedule: "0 */2 * * *"  # toutes les 2 heures
     runtime: python
-    buildCommand: ""
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python main.py"
